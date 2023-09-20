@@ -1,0 +1,351 @@
+/* Основной цвет текста - #525C60 */
+/* Вторичный цвет текста - #274C5B */
+/* Старая цена - #B8B8B8 */
+/* Основной цвет заголовков (Brand color) - #7EB693 */
+/* Акцентный цвет №1 - #EFD372 */
+/* Акцентный цвет №2 - #274C5B */
+/* Основной цвет фона страницы - #FFF*/
+/* Основной цвет фона секций, карточек - #F9F8F8*/
+/* Вторичный цвет фона секций, карточек - #F1F1F1*/
+/* Белый цвет - #FFF*/
+/* Цвет звезды - #FFA858 */
+/* Цвет forms placeholder - #ABABAB */
+/* Цвет линии карточки товара - #DEDDDD */
+/* Полосы в подвале - #D4D4D4 */
+
+:root {
+  --primary-text-color: #525c60;
+  --secondary-text-color: #274c5b;
+  --title-text-color: #7eb693;
+  --accent-color: #efd372;
+  --dark-accent-color: #f0c014;
+  --star-color: #ffa858;
+  --form-placeholder-text-color: #ababab;
+  --primary-bg-color: #f9f8f8;
+  --secondary-bg-color: #f1f1f1;
+  --primary-white-color: #fff;
+}
+
+body {
+  color: var(--primary-text-color);
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.65;
+
+  background-color: var(--primary-white-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.section-title,
+.hero-title,
+.banner-title {
+  color: var(--title-text-color);
+  font-family: "Yellowtail", cursive;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.banner-text,
+.hero-description,
+.section-description,
+.features-title,
+.statistics .caption,
+.news-card .date,
+.news-card .date-month,
+.news-card .title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.logo,
+.site-nav .link,
+.button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.cart-button,
+.products .heading,
+.testimonials-list .author {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.about-us,
+.product-card {
+  background-color: var(--primary-bg-color);
+}
+
+/** Logo */
+.logo {
+  color: var(--secondary-text-color);
+  font-size: 38px;
+  text-decoration: none;
+}
+
+/** Site Nav */
+.site-nav .link {
+  color: var(--secondary-text-color);
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.site-nav .link.current {
+  color: var(--dark-accent-color);
+}
+
+/** Cart Button */
+.cart-button {
+  color: var(--secondary-text-color);
+
+  font-size: 18px;
+}
+
+/** Section */
+.section-description {
+  font-size: 50px;
+}
+
+.section-description.light {
+  color: var(--primary-white-color);
+}
+
+.section-description.dark {
+  color: var(--secondary-text-color);
+}
+
+/**  Hero */
+.hero {
+  background-color: #f1eff0;
+}
+
+.hero-description {
+  color: var(--secondary-text-color);
+  font-size: 70px;
+}
+
+/** Button */
+.button {
+  display: inline-flex;
+  align-items: center;
+  padding: 25px 40px;
+
+  font-size: 20px;
+  text-decoration: none;
+
+  border: 1px solid transparent;
+  border-radius: 16px;
+}
+
+.button.primary {
+  color: var(--primary-white-color);
+
+  background-color: var(--secondary-text-color);
+}
+
+.button.secondary {
+  color: var(--secondary-text-color);
+
+  background-color: var(--accent-color);
+}
+
+.button.tertiary {
+  color: var(--secondary-text-color);
+
+  background-color: var(--primary-white-color);
+  border-color: var(--secondary-text-color);
+}
+
+/** Offer Banners */
+.banner {
+}
+
+.banner.light {
+  background-color: #f96893;
+}
+
+.banner.dark {
+  background-color: #ebf0f4;
+}
+
+.banner.light .banner-title {
+  color: var(--primary-white-color);
+}
+
+.banner.dark .banner-title {
+  color: var(--title-text-color);
+}
+
+.banner-text {
+  font-size: 40px;
+}
+
+.banner.light .banner-text {
+  color: var(--primary-white-color);
+}
+
+.banner.dark .banner-text {
+  color: var(--secondary-text-color);
+}
+
+/** Features */
+.features-title {
+  color: var(--secondary-text-color);
+  font-size: 25px;
+}
+
+/** Products */
+.products .category {
+  color: var(--primary-white-color);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.2;
+
+  background-color: var(--secondary-text-color);
+}
+
+.products .heading {
+  color: var(--secondary-text-color);
+  font-size: 20px;
+}
+
+.products .old-price {
+  color: #b8b8b8;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-decoration: line-through;
+}
+
+.products .price {
+  color: var(--secondary-text-color);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/** Testimonial */
+.testimonial {
+  background-color: #fcfcfc;
+}
+
+.testimonials-list .author {
+  color: var(--secondary-text-color);
+  font-size: 25px;
+}
+
+.testimonials-list .author-position {
+  font-size: 15px;
+}
+
+/** Statistics  */
+.statistics .item {
+  background-color: var(--secondary-bg-color);
+}
+
+.statistics .caption {
+  color: var(--secondary-text-color);
+  font-size: 50px;
+  text-align: center;
+}
+
+.statistics .desc {
+  color: var(--secondary-text-color);
+  font-weight: 600;
+  text-align: center;
+}
+
+/** Offer */
+.offer {
+  background-color: var(--secondary-text-color);
+}
+
+/** Gallery */
+.gallery {
+  background-color: #f1f8f4;
+}
+
+/** Advantages */
+.advantages .title {
+  color: var(--secondary-text-color);
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+/** Categories */
+.categories .item {
+  background-color: var(--primary-bg-color);
+}
+
+.categories .heading {
+  color: var(--secondary-text-color);
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 1.2;
+
+  background-color: var(--primary-white-color);
+}
+
+/** News */
+
+/********** news card */
+.news-card .date,
+.news-card .date-month,
+.news-card .title {
+  color: var(--secondary-text-color);
+}
+
+.news-card .date {
+  font-size: 25px;
+}
+
+.news-card .date-month {
+  font-size: 20px;
+}
+
+.news-card .author {
+  color: var(--secondary-text-color);
+  font-family: "Roboto", sans-serif;
+  line-height: 1.2;
+}
+
+.news-card .title {
+  font-size: 25px;
+}
+
+/** Newslatter  */
+.newslatter {
+  background-color: var(--accent-color);
+}
+
+/** Address */
+.address {
+  font-style: normal;
+}
+
+.address-heading {
+  font-weight: 700;
+}
+
+.address-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+/** Copyright */
+.copyright .link {
+  color: inherit;
+  font-weight: 700;
+  text-decoration: none;
+}
